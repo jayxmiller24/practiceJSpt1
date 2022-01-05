@@ -1,0 +1,15 @@
+img{ 
+    height: 400px;
+    width: 100%;
+}
+#H1 {
+    position: relative;
+    z-index: 50;
+    
+}
+
+span{
+    z-index: 12;
+}
+
+
