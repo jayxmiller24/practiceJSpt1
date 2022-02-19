@@ -1,25 +1,30 @@
-document.addEventListener('keyup', processGuess);
-
-function processGuess(event) {
-
-
-    let wordGuessGame = {
-        userGuess: event.key,
-        randomWords: ["bat", "cat", "witch", "treats", "trick", "costumes", "scary", "candy", "magic", "full moon", "fun","dark"],
-        setWord: function() {
-            return this.randomWords[Math.floor(Math.random() * this.randomWords.length)];
-            
-            
-        },
+let guesses;
+let words=[];
+let loses;
+let wins;
 
 
-    }
+function winGame(){
+  wins++;
+
+}
+
+function loseGame(){
+  loses++;
 
 
-console.log(wordGuessGame.userGuess);
-
-    console.log(wordGuessGame.setWord());
+}
 
 
-};
+function playerGuesses(){
+ 
+
+
+}
+
+function gameOver(){
+  
+}
+
+
 
