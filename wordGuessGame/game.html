@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +10,8 @@
     <link href="./assets/css/style.css" rel="stylesheet">
     <title>Game</title>
 </head>
-<body>
+
+<body onload="start">
     <header>
         <div class="fluid-container">
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
@@ -21,33 +23,45 @@
             </div>
     </header>
     <div class="row">
-        <div class="col-6">
-            <p>Guesses:<span id="Guesses"></span></p>
+        <div class="col-12 hangman">
+
+        </div>
+        <div class="row">
+            <div class="col-6 ">
+                <span id='lines'></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <p>Guesses:<span id="Guesses"></span></p>
+            </div>
         </div>
 
     </div>
 
 
 
-<section>
-    <div class="row">
-        <div class="col-6">
-            <p>Wins:<span id="Wins"></span></p>
+    <section>
+        <div class="row">
+            <div class="col-6">
+                <p>Wins:<span id="Wins"></span></p>
+            </div>
+            <div class="col-6">
+                <p>Loses:<span id="Loses"></span></p>
+            </div>
         </div>
-        <div class="col-6">
-            <p>Loses:<span id="Loses"></span></p>
-        </div>
-    </div>
     </section>
 
     <footer class="footer">
         <p class="text-center text-danger">Created by Jay Miller</p>
     </footer>
-    
+
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
-    
+
+<script src="./assets/javascript/wordGuessGame.js"></script>
+
 </html>
