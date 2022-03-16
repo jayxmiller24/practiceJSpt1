@@ -11,9 +11,9 @@
     <title>Game</title>
 </head>
 
-<body onload="start">
-    <header>
-        <div class="fluid-container">
+<body>
+    <div class="fluid-container">
+        <header>
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -21,40 +21,102 @@
                     </div>
                 </div>
             </div>
-    </header>
-    <div class="row">
-        <div class="col-12 hangman">
+
+        </header>
+        <!---Hangman area start-->
+
+        <div class="row">
+            <div class="col-4">
+             
+            </div>
+            <div class="col-2">
+                <hr id="hr">
+                <div id="vl2"></div>
+                <div id="head"></div>
+                <div id="body"></div>
+                <div class="diag" id="arm1"></div>
+                <div class="diag" id="arm2"></div>
+                <div class="diag" id="leg1"></div>
+                <div class="diag" id="leg2"></div>
+            </div>
+            <div class="col-2" id="vl">
+                
+
+            </div>
+            <div class="col-5">
+                
+
+            </div>
+            <div class="col-2">
+                <hr id="hr2">
+            </div>
+            <div class="col-7">
+
+            </div>
 
         </div>
+
+        <!---Hangman area end-->
+
         <div class="row">
-            <div class="col-6 ">
+            <div class="col-12 hangman">
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+
+            </div>
+            <div class="col-6">
                 <span id='lines'></span>
             </div>
+            
         </div>
+
         <div class="row">
-            <div class="col-6">
-                <p>Guesses:<span id="Guesses"></span></p>
+            <div class="col-2">
+
+            </div>
+            <div class="col-4">
+                <p>Guesses:<span id="WrongGuesses"></span></p>
+            </div>
+            <div class="col-2">
+
+            </div>
+            <div class="col-4">Guesses Left:<span id="GuessesLeft"></span>
             </div>
         </div>
 
+
+
+
+        <section>
+            <div class="row">
+                <div class="col-2">
+
+                </div>
+                <div class="col-4">
+                    <p>Wins:<span id="Wins"></span></p>
+                </div>
+                <div class="col-2">
+
+                </div>
+                <div class="col-4">
+                    <p>Loses:<span id="Loses"></span></p>
+                </div>
+            </div>
+        </section>
+
+        
     </div>
-
-
-
-    <section>
-        <div class="row">
-            <div class="col-6">
-                <p>Wins:<span id="Wins"></span></p>
-            </div>
-            <div class="col-6">
-                <p>Loses:<span id="Loses"></span></p>
-            </div>
+    <div class="row">
+        <div class="col-12">
+            <footer class="footer">
+                <p class="text-center text-danger">Created by Jay Miller</p>
+            </footer>
         </div>
-    </section>
-
-    <footer class="footer">
-        <p class="text-center text-danger">Created by Jay Miller</p>
-    </footer>
+    </div>
 
 </body>
 
